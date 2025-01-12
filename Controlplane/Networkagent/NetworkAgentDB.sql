@@ -1,3 +1,15 @@
+CREATE TABLE "AdditionalData" (
+
+  CONSTRAINT "OID"  REFERENCES "ObjectID" ("OID") ON DELETE CASCADE
+);
+
+CREATE TABLE "Authentication" (
+  "AuthZoken" blob,
+  "AuthTokenTimeStamp" DATE,
+  PRIMARY KEY ("AuthZoken"),
+  CONSTRAINT "OID"  REFERENCES "ObjectID" ("OID") ON DELETE CASCADE
+);
+
 CREATE TABLE "ControlplaneID" (
   "CPID" INTEGER NOT NULL ON CONFLICT ABORT,
   "ÍsLocal" integer NOT NULL ON CONFLICT ABORT DEFAULT no COLLATE BINARY,

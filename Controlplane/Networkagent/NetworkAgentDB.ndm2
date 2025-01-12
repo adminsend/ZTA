@@ -363,6 +363,114 @@
             "uniques": [],
             "checks": [],
             "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "Authentication",
+            "autoIncrement": 0,
+            "isWithoutRowID": false,
+            "oldName": "",
+            "rootPage": 0,
+            "sql": "",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "AuthZoken",
+                "type": "blob",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "Yes",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "AuthZoken"
+              },
+              {
+                "objectType": "TableField_SQLITE",
+                "name": "AuthTokenTimeStamp",
+                "type": "DATE",
+                "size": -2147483648,
+                "scale": -2147483648,
+                "isNullable": "Yes",
+                "defaultValue": "",
+                "defaultValueType": "Others",
+                "collate": "",
+                "notNullOnConflict": "None",
+                "isAutoIncrement": false,
+                "oldName": "AuthTokenTimeStamp"
+              }
+            ],
+            "indexes": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_SQLITE",
+              "name": "",
+              "fields": [
+                "AuthZoken"
+              ],
+              "onConflict": "None",
+              "oldName": ""
+            },
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "OID",
+                "fields": [],
+                "referencedSchema": "",
+                "referencedTable": "ObjectID",
+                "referencedFields": [
+                  "OID"
+                ],
+                "onDelete": "CASCADE",
+                "onUpdate": "",
+                "isDeferred": false,
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "oldName": ""
+              }
+            ],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
+          },
+          {
+            "objectType": "Table_SQLITE",
+            "name": "AdditionalData",
+            "autoIncrement": 0,
+            "isWithoutRowID": false,
+            "oldName": "",
+            "rootPage": 0,
+            "sql": "",
+            "hasIndexes": false,
+            "hasTriggers": false,
+            "hasAutoIncrementInDB": false,
+            "fields": [],
+            "indexes": [],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_SQLITE",
+                "name": "OID",
+                "fields": [],
+                "referencedSchema": "",
+                "referencedTable": "ObjectID",
+                "referencedFields": [
+                  "OID"
+                ],
+                "onDelete": "CASCADE",
+                "onUpdate": "",
+                "isDeferred": false,
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "oldName": ""
+              }
+            ],
+            "uniques": [],
+            "checks": [],
+            "triggers": []
           }
         ],
         "views": []
@@ -387,8 +495,8 @@
           "type": "table",
           "schemaName": "main",
           "tableName": "ControlplaneID",
-          "x": 140,
-          "y": 130,
+          "x": 110,
+          "y": 70,
           "width": 200,
           "height": 200,
           "isBold": false,
@@ -403,8 +511,8 @@
           "type": "table",
           "schemaName": "main",
           "tableName": "ObjectID",
-          "x": 110,
-          "y": 410,
+          "x": 90,
+          "y": 520,
           "width": 200,
           "height": 200,
           "isBold": false,
@@ -419,8 +527,8 @@
           "type": "table",
           "schemaName": "main",
           "tableName": "Integrity",
-          "x": 570,
-          "y": 120,
+          "x": 810,
+          "y": 90,
           "width": 300,
           "height": 400,
           "isBold": false,
@@ -430,10 +538,170 @@
             "b": 192,
             "a": 1
           }
+        },
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "Authentication",
+          "x": 810,
+          "y": 510,
+          "width": 300,
+          "height": 230,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "main",
+          "tableName": "AdditionalData",
+          "x": 810,
+          "y": 760,
+          "width": 300,
+          "height": 200,
+          "isBold": false,
+          "titleColor": {
+            "r": 55,
+            "g": 131,
+            "b": 192,
+            "a": 1
+          }
+        },
+        {
+          "type": "label",
+          "name": "Label 1",
+          "x": 100,
+          "y": 10,
+          "width": 300,
+          "height": 50,
+          "text": "DB Design for SQLite V3",
+          "fontName": "Arial Unicode MS",
+          "fontSize": 24,
+          "isFontBold": false,
+          "isFontItalic": false
         }
       ],
       "layers": [],
-      "relations": [],
+      "relations": [
+        {
+          "name": "OID",
+          "sourceTableName": "Integrity",
+          "sourceSchemaName": "main",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 795,
+              "y": 290
+            },
+            {
+              "x": 530,
+              "y": 580
+            },
+            {
+              "x": 305,
+              "y": 580
+            }
+          ],
+          "label": {
+            "x": 755,
+            "y": 252,
+            "width": 50,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "OID",
+          "sourceTableName": "Authentication",
+          "sourceSchemaName": "main",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 795,
+              "y": 630
+            },
+            {
+              "x": 560,
+              "y": 630
+            },
+            {
+              "x": 305,
+              "y": 630
+            }
+          ],
+          "label": {
+            "x": 755,
+            "y": 592,
+            "width": 50,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "OID",
+          "sourceTableName": "AdditionalData",
+          "sourceSchemaName": "main",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 795,
+              "y": 860
+            },
+            {
+              "x": 520,
+              "y": 860
+            },
+            {
+              "x": 305,
+              "y": 670
+            }
+          ],
+          "label": {
+            "x": 755,
+            "y": 822,
+            "width": 50,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
       "viewRelations": []
     }
   ]

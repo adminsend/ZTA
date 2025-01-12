@@ -102,7 +102,7 @@ https://arxiv.org/abs/2401.09575
 Zero Trust: Applications, Challenges, and Opportunities
 https://arxiv.org/abs/2401.09575
 
-## OSS related sofwarepackes for ZTA
+## OSS related sofwarepackages for ZTA
 
 #### Pomerium
 An identity-aware reverse proxy that provides secure access to internal applications without the need for a corporate VPN. It integrates with various identity providers and enforces context-aware access policies, ensuring that only authorized users can access specific resources.
@@ -163,7 +163,7 @@ Offers a comprehensive Zero Trust architecture encompassing users, applications,
 #### Check Point Software Zero Trust Architecture
 Provides a Zero Trust security architecture designed to reduce cybersecurity risk by eliminating implicit trust within an organization’s IT infrastructure. 
 
-As a drawback all vendorspecific implementations only work well in the vendors own ecosystem. This implies benefits and drawbacks, depending if one is or is not already within the respective ecosystm.
+As a drawback all vendorspecific implementations only work well within the vendors own ecosystem. This implies benefits and drawbacks, depending if one is or is not already within the respective ecosystm.
 
 
 ---
@@ -172,7 +172,7 @@ This code is NOT for production and serves as a POC sample and prototyping envir
 --- 
 ### ZTA-Prototyping
 
-As you see, none of the mentioned existing packages are open, vendor-independend or do implement the entire stack, proposed by NIST. SO with this said, this ia an approach to prototype the entire NIST stack as a POC, for testing and educational purpouses.
+As you see, none of the mentioned existing packages are open, vendor-independend or do implement the entire stack, proposed by NIST. So with this said, this is an approach to prototype the entire NIST stack as a POC, for testing and educational purpouses.
 
 #### Current status
 This is a early-code prototyping sketch for  the NIST SP 800-207 specs for a ZTA based security architecture. 

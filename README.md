@@ -1,6 +1,6 @@
 # ZTA
 
-The existing approaches to system and networking seurity, based on perimeter security and/or defence in depth mechanisms is about to changen in favor of a so called Tero Trust Architecture (ZTA).
+The existing approaches to system and networking seurity, based on perimeter security and/or defence in depth mechanisms is about to changen in favor of a so called Zero Trust Architecture (ZTA).
 
 One of the leading publications is the NIST SP 800-207 document for which a summary is given below:
 

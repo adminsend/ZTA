@@ -1,0 +1,4 @@
+[DEFAULT]
+controlplaneid = 1
+debuglevel = 1
+

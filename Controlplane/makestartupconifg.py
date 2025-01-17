@@ -24,8 +24,8 @@ def create_config_file(file_path):
     config['DEFAULT'] = {
         'ControlplaneID': '0',
         'DebugLevel': '0',
-        #'nonsens': 'None',
-        #'blubb': 'None'
+        'PKIServer': 'None',
+        'LogServer': 'None'
     }
 
     with open(file_path, 'w') as configfile:
@@ -89,8 +89,8 @@ def main():
     # Update the config file
     update_config_file(file_path, 'DEFAULT', 'ControlplaneID', '1')
     update_config_file(file_path, 'DEFAULT', 'DebugLevel', '1')
-    #update_config_file(file_path, 'DEFAULT', 'nonsens', 'UpdatedValue')
-    #update_config_file(file_path, 'DEFAULT', 'blubb', 'UpdatedBlubb')
+    update_config_file(file_path, 'DEFAULT', 'PKIServer', 'pki.ztapoc.net')
+    update_config_file(file_path, 'DEFAULT', 'LOGServer', 'syslog.ztapoc.net')
 
     # Read the updated config file
     read_config_file(file_path)

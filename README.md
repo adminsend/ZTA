@@ -112,6 +112,18 @@ https://www.pomerium.com/blog/open-source-zero-trust-software-solutions
 A comprehensive set of open-source tools designed to integrate zero trust principles directly into applications, enabling the creation of zero trust overlay networks with smart routing capabilities. OpenZiti provides SDKs for various programming languages, allowing developers to embed zero trust networking directly into their applications.
 https://openziti.io
 
+#### OpenPolicy Agent
+Open Policy Agent (OPA) is an open-source, general-purpose policy engine that allows you to define and enforce fine-grained, declarative policies across a wide range of systems. It uses a high-level policy language called Rego to express rules that can be applied to APIs, Kubernetes, microservices, CI/CD pipelines, and more. OPA operates as a standalone service or library, evaluating policies in real-time based on context-specific inputs. It’s widely used for enhancing security, compliance, and access control in cloud-native and distributed environments.
+https://www.openpolicyagent.org/
+
+#### Kyverno
+The Kyverno project provides a comprehensive set of tools to manage the complete Policy-as-Code (PaC) lifecycle for Kubernetes and other cloud native environments.
+https://kyverno.io/
+
+#### Eclipse Hono
+Eclipse Hono is a platform designed to provide a uniform API for connecting large-scale IoT devices and applications. It focuses on features like device registration, authentication, and scalable message routing, making it ideal for IoT ecosystems requiring reliable communication between devices and backend systems.
+https://projects.eclipse.org/projects/iot.hono
+
 #### Tailscale
 Built on WireGuard, Tailscale creates a secure mesh network between devices, simplifying the implementation of Zero Trust principles. It manages firewall rules and NAT traversal, allowing devices to communicate securely without exposing them to the public internet.
 https://www.pomerium.com/blog/open-source-zero-trust-software-solutions
@@ -145,6 +157,18 @@ Keycloak is an open-source Identity and Access Management (IAM) solution that su
 * Fine-Grained Authorization: Supports role-based and attribute-based access control, allowing for detailed policy enforcement.
 * Integration Capabilities: Can be integrated into various platforms to enhance security measures in line with Zero Trust models.
 https://www.keycloak.org/
+
+#### Istio
+Istio is a service mesh that enhances microservices architectures by providing security, observability, and traffic management. It supports advanced features like load balancing, traffic routing, monitoring, and secure communication through mutual TLS (mTLS), making it suitable for managing complex service-to-service interactions.
+https://istio.io/
+
+#### Envoy Proxy
+Envoy Proxy is a cloud-native edge and service proxy designed to handle advanced traffic routing and provide observability and extensibility. It is often used as a sidecar proxy in service mesh implementations or as a standalone API gateway, making it a powerful tool for managing service communication.
+https://www.envoyproxy.io/
+
+#### Kong API Gateway
+Kong API Gateway is an open-source platform for managing APIs. It offers features such as rate limiting, authentication, request transformation, and an extensive plugin ecosystem. Kong is particularly well-suited for scaling and optimizing API management while maintaining performance and flexibility.
+https://konghq.com/products/kong-gateway
 
 ### Vendor specific Zero Trus Solutions
 

@@ -170,7 +170,7 @@ https://www.envoyproxy.io/
 Kong API Gateway is an open-source platform for managing APIs. It offers features such as rate limiting, authentication, request transformation, and an extensive plugin ecosystem. Kong is particularly well-suited for scaling and optimizing API management while maintaining performance and flexibility.
 https://konghq.com/products/kong-gateway
 
-### Vendor specific Zero Trus Solutions
+### Vendor specific Zero Trust Solutions
 
 #### Zscaler Zero Trust Exchange
 A cloud-native platform that provides secure access to applications and services based on Zero Trust principles, ensuring that no user or device is trusted by default.

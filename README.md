@@ -1,4 +1,6 @@
-# ZTA
+
+# ZTA![zta](https://github.com/user-attachments/assets/038734bb-ba1b-4fb5-b8d5-8dccb25c5d34)
+
 
 The existing approaches to system and networking seurity, based on perimeter security and/or defence in depth mechanisms is about to changen in favor of a so called Zero Trust Architecture (ZTA).
 
